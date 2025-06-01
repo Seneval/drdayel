@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr. Dayel Rosales - Cirujano Maxilofacial</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style>
+    body {
+      font-family: 'Manrope', sans-serif;
+    }
+    .bg-primary {
+      background-color: #162D71;
+    }
+    .bg-secondary {
+      background-color: #F6F3F2;
+    }
+    .bg-accent-1 {
+      background-color: #5C6894;
+    }
+    .bg-accent-2 {
+      background-color: #ACA0A4;
+    }
+    .bg-neutral-dark {
+      background-color: #141738;
+    }
+    .text-primary {
+      color: #162D71;
+    }
+    .text-secondary {
+      color: #F6F3F2;
+    }
+    .text-accent-1 {
+      color: #5C6894;
+    }
+    .text-accent-2 {
+      color: #ACA0A4;
+    }
+    .text-neutral-dark {
+      color: #141738;
+    }
+    .border-accent-2 {
+      border-color: #ACA0A4;
+    }
+    .hover\:bg-accent-1-dark:hover {
+      background-color: #4a557a;}
+    .snap-x {
+      scroll-snap-type: x mandatory;
+    }
+    .snap-center {
+      scroll-snap-align: center;
+    }
+    .carousel-item {
+      flex: 0 0 100%;
+    }
+    @media (min-width: 768px) {
+      .carousel-item {
+        flex: 0 0 50%;
+      }
+    }
+    @media (min-width: 1024px) {
+      .carousel-item {
+        flex: 0 0 33.333333%;
+      }
+    }
+  </style>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#162D71',
+            secondary: '#F6F3F2',
+            'accent-1': '#5C6894',
+            'accent-2': '#ACA0A4',
+            'neutral-dark': '#141738',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-secondary">
+<header class="bg-primary text-white sticky top-0 z-50 shadow-lg">
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<a class="text-2xl font-bold flex items-center" href="#">
+<img src="imagenes/logo.png" alt="Logo Dr. Dayel Rosales" class="h-20 mr-3 bg-white p-0 rounded-md">
+        Dr. Dayel Rosales
+      </a>
+<nav class="hidden md:flex space-x-6 items-center">
+<a class="hover:text-accent-1 transition-colors" href="#about">Acerca de mí</a>
+<a class="hover:text-accent-1 transition-colors" href="#services">Servicios</a>
+<a class="hover:text-accent-1 transition-colors" href="#testimonials">Testimonios</a>
+<a class="bg-accent-1 hover:bg-accent-1-dark text-white font-semibold py-2 px-4 rounded-lg transition-colors" href="#contact">Agendar Cita</a>
+</nav>
+<button class="md:hidden focus:outline-none" id="mobile-menu-button">
+<span class="material-icons text-3xl">menu</span>
+</button>
+</div>
+<div class="hidden md:hidden bg-primary pb-4" id="mobile-menu">
+<a class="block py-2 px-6 hover:bg-accent-1 transition-colors" href="#about">Acerca de mí</a>
+<a class="block py-2 px-6 hover:bg-accent-1 transition-colors" href="#services">Servicios</a>
+<a class="block py-2 px-6 hover:bg-accent-1 transition-colors" href="#testimonials">Testimonios</a>
+<a class="block py-2 px-6 bg-accent-1 hover:bg-accent-1-dark text-white font-semibold rounded-lg mx-4 my-2 text-center transition-colors" href="#contact">Agendar Cita</a>
+</div>
+</header>
+<section class="bg-gradient-to-br from-primary to-accent-1 text-white py-20 md:py-32">
+<div class="container mx-auto px-6 text-center md:text-left flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-10 md:mb-0">
+<h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Dr. Dayel Rosales</h1>
+<p class="text-xl md:text-2xl mb-4 text-accent-2 font-light">Cirujano Maxilofacial Certificado</p>
+<p class="text-lg mb-8 leading-relaxed">Especialista en cirugía ortognática, reconstructiva craneofacial, bucal e implantes dentales. Su salud bucal y facial en manos expertas.</p>
+<div class="flex flex-col sm:flex-row justify-center md:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+<a class="bg-white text-primary hover:bg-opacity-90 font-semibold py-3 px-8 rounded-lg text-lg transition-colors shadow-md flex items-center justify-center" href="https://wa.me/528713860450" target="_blank">
+<span class="material-icons mr-2">whatsapp</span><span>Agendar por WhatsApp</span>
+</a>
+<a class="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold py-3 px-8 rounded-lg text-lg transition-colors shadow-md flex items-center justify-center" href="#contact">
+<span class="material-icons mr-2">phone</span><span>Llamar Ahora</span>
+</a>
+</div>
+</div>
+<div class="md:w-1/2 flex justify-center md:justify-end md:mt-24">
+<img alt="Dr. Dayel Rosales" class="rounded-full shadow-2xl w-64 h-64 md:w-96 md:h-96 object-cover object-top border-4 border-white" src="imagenes/foto del dr dayel.png"/>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24 bg-white" id="about">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl md:text-4xl font-bold text-primary text-center mb-12">Acerca del Dr. Dayel Rosales</h2>
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="md:w-1/3">
+<img alt="Dr. Dayel Rosales en consultorio" class="rounded-lg shadow-xl w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjwDwJK_PwDuIJ5GNX_1aUD-GE-xeC68U08ykkpdzZQQLCGabWWv9jCPToY13gbggAQPtKaVb-tMPtvSkPuvBVgjjuS_y38ZVqoAuAm6DtojyXd9mLM22yHFYZhusRu1wol51vyptIAEJlAR8RQoTyTjzmMeI0Ywv5BVDUlqglpLJpz8bGYTO6wscNPO0S39DlslXKuDzTBh2BtWP3x2XnAqWJw_oVBWW6a797RN0KLzKgm0nTv5ZeBfriuOq2pQ798zhPERmMhNI" style="aspect-ratio: 3/4;"/>
+</div>
+<div class="md:w-2/3 text-neutral-dark text-lg">
+<p class="mb-6">El <strong>Dr. Dayel Rosales</strong> es un Cirujano Maxilofacial altamente calificado y comprometido con la excelencia en el cuidado de sus pacientes. Su formación y experiencia lo posicionan como un referente en la región.</p>
+<ul class="space-y-3 list-disc list-inside text-accent-1 mb-6">
+<li><strong class="text-primary">Certificado CONACEM (#762)</strong></li>
+<li>Especialista en cirugía ortognática, reconstructiva craneofacial, bucal e implantes dentales (UNAM/IMSS)</li>
+<li>Maestría en investigación (UAdeC)</li>
+<li>Doctorado en Ciencias Biomédicas (UAdeC)</li>
+<li>Posgrado en Cirugía de Nervio Periférico (UAdeC/Clínica Mielina)</li>
+<li>Posgrado en Microcirugía Reconstructiva de Cabeza y Cuello (Universitat Autònoma de Barcelona/Reconstructive Microsurgery European School)</li>
+</ul>
+<p class="font-semibold text-primary text-xl">"No ponga su salud en manos de cualquiera, acuda con doctores capacitados y actualizados."</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24 bg-secondary" id="services">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl md:text-4xl font-bold text-primary text-center mb-16">Nuestros Servicios</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+<div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6">
+<span class="material-icons text-3xl">face_retouching_natural</span>
+</div>
+<h3 class="text-xl font-semibold text-primary mb-3">Cirugía Ortognática</h3>
+<p class="text-neutral-dark leading-relaxed">Corrección de deformidades dentofaciales para mejorar la función y estética.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+<div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6">
+<span class="material-icons text-3xl">auto_awesome</span>
+</div>
+<h3 class="text-xl font-semibold text-primary mb-3">Rinoplastia</h3>
+<p class="text-neutral-dark leading-relaxed">Mejora la forma y función de la nariz, armonizando el rostro.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+<div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6">
+<span class="material-icons text-3xl">hotel</span>
+</div>
+<h3 class="text-xl font-semibold text-primary mb-3">Polisomnografía</h3>
+<p class="text-neutral-dark leading-relaxed">Estudio del sueño para diagnóstico de trastornos como la apnea.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+<div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6">
+<span class="material-icons text-3xl">mood</span>
+</div>
+<h3 class="text-xl font-semibold text-primary mb-3">Aumento de Labios</h3>
+<p class="text-neutral-dark leading-relaxed">Realce y definición del volumen labial con resultados naturales.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+<div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6">
+<span class="material-icons text-3xl">content_cut</span>
+</div>
+<h3 class="text-xl font-semibold text-primary mb-3">Lipopapada</h3>
+<p class="text-neutral-dark leading-relaxed">Eliminación de grasa submental para definir el contorno del cuello.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+<div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6">
+<span class="material-icons text-3xl">sentiment_very_satisfied</span>
+</div>
+<h3 class="text-xl font-semibold text-primary mb-3">Bichectomía</h3>
+<p class="text-neutral-dark leading-relaxed">Afinamiento de mejillas mediante la extracción de las bolsas de Bichat.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+<div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6">
+<span class="material-icons text-3xl">healing</span>
+</div>
+<h3 class="text-xl font-semibold text-primary mb-3">Ácido Hialurónico</h3>
+<p class="text-neutral-dark leading-relaxed">Rellenos faciales para rejuvenecimiento y corrección de arrugas.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+<div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6">
+<span class="material-icons text-3xl">settings_accessibility</span>
+</div>
+<h3 class="text-xl font-semibold text-primary mb-3">Implantes Dentales</h3>
+<p class="text-neutral-dark leading-relaxed">Soluciones permanentes y estéticas para la pérdida de dientes.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+<div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6">
+<span class="material-icons text-3xl">medical_services</span>
+</div>
+<h3 class="text-xl font-semibold text-primary mb-3">Cirugía del Tercer Molar</h3>
+<p class="text-neutral-dark leading-relaxed">Extracción segura y eficaz de las muelas del juicio.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 sm:col-span-2 lg:col-span-1 lg:col-start-2">
+<div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6">
+<span class="material-icons text-3xl">personal_injury</span>
+</div>
+<h3 class="text-xl font-semibold text-primary mb-3">Cirugía para Traumatismo Facial</h3>
+<p class="text-neutral-dark leading-relaxed">Atención especializada en fracturas y lesiones faciales.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24 bg-white" id="testimonials">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl md:text-4xl font-bold text-primary text-center mb-16">Resultados que Inspiran Confianza</h2>
+<div class="relative">
+<div class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide" id="carousel">
+<div class="carousel-item snap-center flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-4">
+<div class="bg-secondary rounded-lg shadow-xl overflow-hidden">
+<div class="grid grid-cols-2">
+<img alt="Antes del tratamiento maxilofacial" class="w-full h-64 object-cover" src="imagenes/ortognatica antes .png"/>
+<img alt="Después del tratamiento maxilofacial" class="w-full h-64 object-cover" src="imagenes/ortognatica despues.png"/>
+</div>
+<div class="p-6">
+<h4 class="text-lg font-semibold text-primary mb-2">Transformación Facial Completa</h4>
+<p class="text-sm text-neutral-dark">Resultados notables en la armonía y función facial.</p>
+</div>
+</div>
+</div>
+<div class="carousel-item snap-center flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-4">
+<div class="bg-secondary rounded-lg shadow-xl overflow-hidden">
+<div class="grid grid-cols-2">
+<img alt="Antes de asimetría" class="w-full h-64 object-cover" src="imagenes/asimetria antes.png"/>
+<img alt="Después de asimetría" class="w-full h-64 object-cover" src="imagenes/asimetria despues.png"/>
+</div>
+<div class="p-6">
+<h4 class="text-lg font-semibold text-primary mb-2">Corrección de Asimetría</h4>
+<p class="text-sm text-neutral-dark">Mejora estética y funcional del rostro.</p>
+</div>
+</div>
+</div>
+<div class="carousel-item snap-center flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-4">
+<div class="bg-secondary rounded-lg shadow-xl overflow-hidden">
+<div class="grid grid-cols-2">
+<img alt="Antes de cirugía ortognática" class="w-full h-64 object-cover" src="imagenes/orto2 antes.png"/>
+<img alt="Después de cirugía ortognática" class="w-full h-64 object-cover" src="imagenes/orto 2 despues.png"/>
+</div>
+<div class="p-6">
+<h4 class="text-lg font-semibold text-primary mb-2">Corrección Ortognática</h4>
+<p class="text-sm text-neutral-dark">Alineación maxilar para una mordida y perfil perfectos.</p>
+</div>
+</div>
+</div>
+</div>
+<button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-primary text-white p-2 rounded-full shadow-md hover:bg-accent-1 transition-colors ml-2 z-10 opacity-75 hover:opacity-100" id="prevBtn">
+<span class="material-icons">chevron_left</span>
+</button>
+<button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-primary text-white p-2 rounded-full shadow-md hover:bg-accent-1 transition-colors mr-2 z-10 opacity-75 hover:opacity-100" id="nextBtn">
+<span class="material-icons">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24 bg-primary text-white" id="contact">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Agenda tu Consulta de Valoración</h2>
+<p class="text-lg text-center mb-10 max-w-3xl mx-auto text-accent-2">Contáctanos directamente para programar tu cita. Estamos listos para ayudarte a alcanzar tus objetivos de salud y estética facial.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+<div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg text-center hover:bg-opacity-20 transition-all">
+<span class="material-icons text-accent-1 text-4xl mb-3">location_on</span>
+<h4 class="text-xl font-semibold mb-2">Torreón, Coahuila</h4>
+<p class="text-accent-2">Alfonso Estrada 322<br/>Col. Nueva Los Ángeles</p>
+<a class="block mt-3 text-white hover:text-accent-1 font-medium transition-colors" href="tel:+52871714434">+(871) 714 434</a>
+</div>
+<div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg text-center hover:bg-opacity-20 transition-all">
+<span class="material-icons text-accent-1 text-4xl mb-3">location_on</span>
+<h4 class="text-xl font-semibold mb-2">Gómez Palacio, Durango</h4>
+<p class="text-accent-2">Sanatorio San José</p>
+<a class="block mt-3 text-white hover:text-accent-1 font-medium transition-colors" href="tel:+528717051910">+(871) 705 1910</a>
+</div>
+<div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg text-center hover:bg-opacity-20 transition-all">
+<span class="material-icons text-accent-1 text-4xl mb-3">location_on</span>
+<h4 class="text-xl font-semibold mb-2">Hospital Ángeles, Torreón</h4>
+<p class="text-accent-2">Consultorio 840, Torre de Especialidades</p>
+<a class="block mt-3 text-white hover:text-accent-1 font-medium transition-colors" href="tel:+522225450">+222 54 50 ext. 7840</a>
+</div>
+</div>
+<div class="text-center">
+<a class="bg-accent-1 hover:bg-accent-1-dark text-white font-bold py-4 px-10 rounded-lg text-xl transition-colors shadow-xl inline-flex items-center justify-center" href="https://wa.me/528713860450" target="_blank">
+<span class="material-icons mr-3 text-2xl">whatsapp</span> Citas por WhatsApp
+        </a>
+<p class="mt-4 text-accent-2">Haz clic aquí: <a class="underline hover:text-white" href="https://wa.me/528713860450" target="_blank">871 386 0450</a></p>
+</div>
+</div>
+</section>
+<footer class="bg-neutral-dark text-accent-2 py-12">
+<div class="container mx-auto px-6 text-center">
+<p class="mb-2">© <span id="currentYear"></span> Dr. Dayel Rosales. Todos los derechos reservados.</p>
+<p class="text-sm">Cirujano Maxilofacial Certificado. Cuidando tu sonrisa y bienestar.</p>
+<p class="text-xs mt-4">Diseño web por un experto.</p>
+</div>
+</footer>
+<script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Carousel functionality
+    const carousel = document.getElementById('carousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    let itemWidth = carouselItems.length > 0 ? carouselItems[0].getBoundingClientRect().width + (parseFloat(getComputedStyle(carouselItems[0]).marginLeft) + parseFloat(getComputedStyle(carouselItems[0]).marginRight) + parseFloat(getComputedStyle(carouselItems[0]).paddingLeft) + parseFloat(getComputedStyle(carouselItems[0]).paddingRight) ) : 0;
+    
+    // Recalculate itemWidth on resize
+    window.addEventListener('resize', () => {
+      if (carouselItems.length > 0) {
+        itemWidth = carouselItems[0].getBoundingClientRect().width + (parseFloat(getComputedStyle(carouselItems[0]).marginLeft) + parseFloat(getComputedStyle(carouselItems[0]).marginRight) + parseFloat(getComputedStyle(carouselItems[0]).paddingLeft) + parseFloat(getComputedStyle(carouselItems[0]).paddingRight) );
+      }
+    });
+    
+    if (prevBtn && nextBtn && carousel) {
+      nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: itemWidth, behavior: 'smooth' });
+      });
+      prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: -itemWidth, behavior: 'smooth' });
+      });
+    }
+    
+    // Update footer year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                // Scroll to element
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>
