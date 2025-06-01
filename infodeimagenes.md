@@ -1,10 +1,10 @@
 # Información de Imágenes
 
-## Hero Section - Perfil Dr. Dayel Rosales (`imagenes/dayelprofile.jpg`)
-- **Descripción:** Retrato del Dr. Dayel Rosales, sonriendo, con bata médica. Se utiliza en la sección principal (hero) de la página.
-- **Medidas en la página (escritorio):** 384px x 384px (renderizado como w-96 h-96)
-- **Medidas en la página (móvil):** 256px x 256px (renderizado como w-64 h-64)
-- **Aspect Ratio:** 1:1 (cuadrada, mostrada como círculo)
+## Acerca de mí Section - Perfil Dr. Dayel Rosales (`imagenes/foto del dr dayel.png`)
+- **Descripción:** Retrato del Dr. Dayel Rosales con bata blanca y brazos cruzados. Se utiliza en la sección "Acerca de mí".
+- **Medidas en la página (escritorio):** El ancho es 1/3 del contenedor, la altura es automática con un aspect ratio de 3/4.
+- **Medidas en la página (móvil):** El ancho es 100% del contenedor, la altura es automática con un aspect ratio de 3/4.
+- **Aspect Ratio:** 3:4
 
 ## Header - Logo Dr. Dayel Rosales (`imagenes/logo.png`)
 - **Descripción:** Logo oficial del Dr. Dayel Rosales. Se muestra en la barra de navegación.
